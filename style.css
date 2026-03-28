@@ -251,16 +251,22 @@ nav ul a.active { color: var(--text); }
 .text-link:hover { text-decoration: underline; }
 
 /* Talk list */
-.talk-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-}
+.talk-list { max-width: 900px; }
 .talk-list-item {
-    padding: 2rem 2rem 2rem 0;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 2.5rem;
+    padding: 2rem 0;
     border-top: 1px solid var(--line);
+    align-items: start;
 }
-.talk-list-item:nth-child(even) { padding-left: 2rem; padding-right: 0; }
+.talk-list-item:last-child { border-bottom: 1px solid var(--line); }
+.talk-list-item img {
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+}
 .talk-list-item h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.05rem;
@@ -494,8 +500,8 @@ footer {
     .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
     .rq-section { grid-template-columns: 1fr; gap: 3rem; }
     .timeline-item { grid-template-columns: 1fr; gap: 0.4rem; }
-    .talk-list { grid-template-columns: 1fr; }
-    .talk-list-item:nth-child(even) { padding-left: 0; }
+    .talk-list-item { grid-template-columns: 1fr; gap: 1rem; }
+    .talk-list-item img { width: 100%; height: 180px; }
     .writing-item { grid-template-columns: 1fr; gap: 1rem; }
     .writing-thumb { width: 100%; height: 180px; }
     .op-items { grid-template-columns: 1fr; }
