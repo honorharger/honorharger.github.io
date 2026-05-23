@@ -810,6 +810,11 @@ nav ul a.active { color: var(--text); }
 }
 @media (max-width: 600px) {
     .project-links { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .project-hero { height: 80vh; min-height: 420px; }
+    .project-content { padding: 3rem 1.25rem; }
+    .project-role { padding: 1rem 1.25rem; }
+    .project-back { padding: 1.5rem 1.25rem; }
+    .project-img-full figcaption { padding: 0 1.25rem; }
 }
 
 /* Footer */
@@ -868,6 +873,7 @@ footer {
     .writing-thumb { width: 100%; height: 180px; }
     .op-items { grid-template-columns: 1fr; }
     .blog-feature { padding: 2.5rem 2rem; }
+    .projects-subnav { flex-wrap: wrap; gap: 1rem; padding-bottom: 1rem; }
 }
 @media (max-width: 600px) {
     .projects-grid { grid-template-columns: 1fr; }
@@ -886,4 +892,9 @@ footer {
     }
     nav ul.open { display: flex; }
     nav ul a { font-size: 0.9rem; }
+    footer { padding: 1.5rem 1.25rem; }
+    .section-wrap { padding: 4rem 1.25rem; }
+    .hero-text { padding: 6rem 1.25rem 2.5rem; }
+    .hero-image { height: 55vw; }
+    .about-image img { aspect-ratio: 3/2; }
 }
