@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A New Chapter — Honor Harger</title>
+    <meta name="description" content="After 12 wonderful years as director of ArtScience Museum, Honor Harger steps down to found Futures Imagined, a new studio working at the intersection of art, science, and futures thinking.">
+    <meta property="og:title" content="A New Chapter — Honor Harger">
+    <meta property="og:description" content="After 12 wonderful years as director of ArtScience Museum, a new chapter begins.">
+    <meta property="og:image" content="https://www.honorharger.org/images/new-chapter/portrait.jpg">
+    <meta property="og:url" content="https://www.honorharger.org/new-chapter.html">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.honorharger.org/images/new-chapter/portrait.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ── New Chapter page ── */
+        .nc-hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+        .nc-hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .nc-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(26,26,23,0.2) 0%, rgba(26,26,23,0.65) 100%);
+        }
+        .nc-hero-text {
+            position: absolute;
+            bottom: 4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            padding: 0 2rem;
+        }
+        .nc-hero-text h1 {
+            color: #fff;
+            font-size: clamp(2.4rem, 5.5vw, 4.5rem);
+            font-weight: 400;
+            margin: 0.5rem 0 0;
+            line-height: 1.15;
+        }
+        .nc-hero-text .section-label {
+            color: rgba(255,255,255,0.7);
+        }
+        .nc-body {
+            background: var(--bg);
+        }
+        .nc-content {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 4.5rem 2rem;
+        }
+        .nc-content p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text);
+            margin-bottom: 1.6rem;
+            font-weight: 300;
+        }
+        .nc-content p:last-child {
+            margin-bottom: 0;
+        }
+        .nc-content a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(139,115,85,0.45);
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .nc-content a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+        .nc-content .text-link {
+            border-bottom: none;
+        }
+        .nc-content .text-link:hover {
+            border-bottom: none;
+        }
+        .nc-img-full {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            line-height: 0;
+        }
+        .nc-img-full img {
+            width: 100%;
+            height: 60vh;
+            min-height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+        .nc-quote {
+            margin: 3.5rem 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.25rem, 2.4vw, 1.85rem);
+            font-style: italic;
+            font-weight: 400;
+            color: var(--accent);
+            line-height: 1.65;
+            border: none;
+        }
+        .nc-signoff {
+            border-top: 1px solid var(--line);
+            padding-top: 2.5rem;
+            margin-top: 1rem;
+        }
+        .nc-signoff p {
+            margin-bottom: 0.4rem !important;
+        }
+        .nc-signoff .nc-links {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        @media (max-width: 600px) {
+            .nc-hero-text {
+                bottom: 2.5rem;
+            }
+            .nc-content {
+                padding: 3rem 1.25rem;
+            }
+            .nc-img-full img {
+                height: 50vw;
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="name">Honor Harger</a>
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="nc-hero">
+    <img src="images/new-chapter/portrait.jpg" alt="Honor Harger" class="nc-hero-img">
+    <div class="nc-hero-overlay"></div>
+    <div class="nc-hero-text">
+        <span class="section-label">26 May 2026</span>
+        <h1>A New Chapter</h1>
+    </div>
+</section>
+
+<div class="nc-body">
+
+    <div class="nc-content">
+        <p>I have some news of a significant new chapter in my work and life, which I am happy to share.</p>
+
+        <p>After 12 wonderful years as director of <a href="https://artsciencemuseum.com/" target="_blank">ArtScience Museum</a>, I have decided that this is the right moment to step down and begin a new chapter.</p>
+
+        <p>It is a decision I have been moving towards for some time, and I am making it from a position of pride in what we built together, and excitement about what comes next.</p>
+
+        <p>Leading <a href="https://artsciencemuseum.com/" target="_blank">ArtScience Museum</a> has been the privilege of my professional life. Together with my incredible team, we have brought 75 major exhibitions and thousands of events to Singapore.</p>
+
+        <p>We have worked with artists, scientists, technologists, and thinkers who created some of the world's most compelling and intriguing work. We brought original masterpieces by <a href="projects/da-vinci.html">Leonardo da Vinci</a> to Southeast Asia for the first time. We made astronomy and particle physics accessible and compelling to hundreds of thousands of visitors. We opened <a href="https://www.teamlab.art/e/artsciencemuseum/" target="_blank">teamLab's first ever permanent exhibition</a>, and launched Southeast Asia's first VR Gallery. We have surprised and delighted many millions of visitors over the past decade. And we did this whilst working hard to make the world a better place. Through our collaborations with WWF, we planted 10,000 trees in Rimbang Baling, 20,000 mangrove trees across Southeast Asia, and we are about to plant 100 hectares of seagrass through our next exhibition, Into the Ocean.</p>
+    </div>
+
+    <figure class="nc-img-full">
+        <img src="images/new-chapter/future-world.jpg" alt="Future World: Where Art Meets Science, teamLab, ArtScience Museum">
+    </figure>
+
+    <div class="nc-content">
+        <p>I am leaving feeling immensely proud of what we have built <a href="https://artsciencemuseum.com/" target="_blank">ArtScience Museum</a> into: an internationally recognised and locally cherished institution that celebrates the convergence of art, science, technology and culture. Having taken the museum to its <a href="https://www.mens-folio.com/lifestyle/the-artscience-musuem-celebrates-15-years-at-the-intersection-of-art-science/" target="_blank">15th anniversary</a> this year, this is the right moment to bow out, on a high. And I am excited to be starting something new and inspiring.</p>
+    </div>
+
+    <figure class="nc-img-full">
+        <img src="images/new-chapter/another-world.jpg" alt="Another World Is Possible, ArtScience Museum, 2025">
+    </figure>
+
+    <div class="nc-content">
+        <p>I am delighted to announce that I have founded <a href="https://futuresimagined.com/" target="_blank">Futures Imagined</a>, a new studio based in the UK, and working internationally at the intersection of art, science, and futures thinking. As Director and Chief Curator, I will be working on exhibitions, writing, and public events, as well as engaging in consultancy for organisations and individuals who want to think boldly about the future and harness the power of culture and imagination to help create it.</p>
+
+        <p><a href="https://futuresimagined.com/" target="_blank" class="text-link">Visit futuresimagined.com →</a></p>
+    </div>
+
+    <figure class="nc-img-full">
+        <img src="images/new-chapter/asm-exterior.jpg" alt="ArtScience Museum, Singapore">
+    </figure>
+
+    <div class="nc-content">
+        <p>I am also going to be doing some advisory work with a Gulf-based firm working at the frontier of futures intelligence and geopolitical analysis. This is the kind of intellectually ambitious, internationally oriented work that energises me, so I am really happy about this direction. I will be making a further announcement about that soon.</p>
+
+        <p>Alongside this, I am extending my research practice through a Master's degree in Museum Studies at the <a href="https://le.ac.uk/museum-studies/about" target="_blank">University of Leicester</a>, giving me the chance to explore more fully the intellectual and academic territory I have spent my career working within.</p>
+
+        <p>Together, these new ventures will allow me to go deeper into the art, science, and technology work I love, and to pursue the futures thinking I introduced to the museum through exhibitions like <a href="projects/2219.html"><em>2219</em></a> and <a href="projects/another-world.html"><em>Another World is Possible</em></a>, and initiatives like last year's Futures Festival. It's an opportunity to expand my horizons, and work with more focus and more freedom.</p>
+    </div>
+
+    <figure class="nc-img-full">
+        <img src="images/new-chapter/talk-2024.jpg" alt="Honor Harger in conversation at TED, 2024">
+    </figure>
+
+    <div class="nc-content">
+        <p>I am leaving <a href="https://artsciencemuseum.com/" target="_blank">ArtScience Museum</a> in the hands of a truly remarkable team. My colleague <a href="https://www.adriangeorge.me/" target="_blank">Adrian George</a> will continue to lead our curatorial and programmatic work, ably supported by a team of amazing people too numerous to name, all of whom I will miss dearly.</p>
+
+        <p>I am also stepping down from my role as Vice President of Attractions at Marina Bay Sands, and I am leaving the attractions in the safe hands of the wonderful <a href="https://www.linkedin.com/in/jason-teo-a36463b5/" target="_blank">Jason Teo</a>.</p>
+
+        <p>I have often quoted the writer <a href="https://en.wikipedia.org/wiki/Rene_Denfeld" target="_blank">René Denfeld</a> when I have spoken about why I believe in working on projects about the future. <a href="https://lithub.com/letter-to-a-young-climate-activist-on-the-first-day-of-the-new-decade/" target="_blank">She once said</a>:</p>
+
+        <blockquote class="nc-quote">
+            "If you think about it, imagination is actually a radical act. Because if you have an imagination, you can imagine yourself in a different future."
+        </blockquote>
+
+        <p>My 12 years at <a href="https://artsciencemuseum.com/" target="_blank">ArtScience Museum</a> has taught me how true that is. And now <a href="https://www.futuresimagined.com/" target="_blank">Futures Imagined</a> is my way of making sure that remains at the heart of everything I do.</p>
+
+        <p>I will remain based in Singapore for the time being, but travelling, as needed, and talking through opportunities ahead.</p>
+
+        <p>I very much look forward to catching up with friends and colleagues over the next weeks and months.</p>
+
+        <div class="nc-signoff">
+            <p>Drop me a line and let's stay in touch.</p>
+            <p>Honor Harger</p>
+            <div class="nc-links">
+                <a href="mailto:honor@honorharger.org" class="text-link">honor@honorharger.org</a>
+                <a href="https://www.honorharger.org/" class="text-link">honorharger.org</a>
+                <a href="https://futuresimagined.com/" target="_blank" class="text-link">futuresimagined.com</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <span>© 2026 Honor Harger</span>
+    <span>Singapore</span>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
